@@ -1,5 +1,3 @@
-package com.codurance.commodities.integration;
-
 import com.codurance.commodities.controller.CommodityController;
 import com.codurance.commodities.domain.Commodity;
 import org.junit.Before;
@@ -9,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.test.annotation.DirtiesContext;
+import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
@@ -19,6 +18,7 @@ import static org.junit.Assert.assertThat;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
+@TestPropertySource(locations = "classpath:test.properties")
 public class CommodityControllerIntegrationTest {
 
     @Autowired
