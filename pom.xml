@@ -71,7 +71,8 @@
                         <phase>integration-test</phase>
                         <configuration>
                             <excludes>
-                                <exclude>none</exclude>
+                                <exclude>**/*ApplicationTests.java</exclude>
+                                <exclude>**/*IntegrationTest.java</exclude>
                             </excludes>
                             <includes>
                                 <include>**/*Should.java</include>
