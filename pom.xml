@@ -71,10 +71,11 @@
                         <phase>integration-test</phase>
                         <configuration>
                             <excludes>
-                                <exclude>**/*ApplicationTests.java</exclude>
-                                <exclude>**/*IntegrationTest.java</exclude>
+                                <exclude>none</exclude>
                             </excludes>
                             <includes>
+                                <include>**/*ApplicationTests.java</include>
+                                <include>**/*IntegrationTest.java</include>
                                 <include>**/*Should.java</include>
                             </includes>
                         </configuration>
