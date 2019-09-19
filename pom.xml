@@ -74,8 +74,6 @@
                                 <exclude>none</exclude>
                             </excludes>
                             <includes>
-                                <include>**/*ApplicationTests.java</include>
-                                <include>**/*IntegrationTest.java</include>
                                 <include>**/*Should.java</include>
                             </includes>
                         </configuration>
