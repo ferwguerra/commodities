@@ -1,3 +1,5 @@
+package com.codurance.commodities.integration;
+
 import com.codurance.commodities.controller.CommodityController;
 import com.codurance.commodities.domain.Commodity;
 import org.junit.Before;
